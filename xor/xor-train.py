@@ -28,11 +28,5 @@ print(model.predict(training_data))
 #Store trained model
 model.save("xor")
 
-input('Persisted trained model...')
-
-#Testing output
-input('Running test on given input...')
-test = [[1, 0]]
-print('The network output was: ' + str(int(round(model.predict(test)[0][0]))))
-
+print('Persisted trained model...')
 input('Press any key to exit...')
